@@ -1,16 +1,7 @@
-import numpy as np
-
 a,b = map(int, input().split())
-count = 0
-
-for i in range(a, b+1):
-  if i == 0:
-    print('Zero')
-    exit()
-  if np.sign(i) == -1:
-    count += 1
-
-if count % 2 == 0:
-  print('Positive')
-else:
+if a <= 0 <= b:
+  print('Zero')
+elif b < 0 and (b-a+1) % 2 == 1:
   print('Negative')
+else:
+  print('Positive')
