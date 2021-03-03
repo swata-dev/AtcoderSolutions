@@ -8,7 +8,6 @@ for i in range(n+1):
   while i > 0:
     list.append(i%10)
     i //= 10
-  list.reverse()
   for j in list:
     sum += j
 
